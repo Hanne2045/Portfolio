@@ -1,6 +1,6 @@
 /* ==================================================================
    CONTENT — every text, photo and the accent colour of the site live in this file.
-   Change a photo: put the new file in img/ and change the path here.
+   Change a photo: upload the new file next to index.html and change the file name here.
    Any size or orientation works; the site crops or blurs the edges itself.
    ================================================================== */
 
@@ -15,7 +15,7 @@ window.SITE = {
   text: {
     pageTitle: 'Hanne Vaartjes Portfolio',
     logo: 'hv',
-    logoImage: '',   /* optional: path to a logo image, e.g. 'img/logo.svg'; leave empty to use the text above */
+    logoImage: '',   /* optional: path to a logo image, e.g. 'logo.svg'; leave empty to use the text above */
     firstName: 'Hanne',
     lastName: 'Vaartjes.',
     roles: ['HCI student', 'Product owner', 'UI designer', 'UX designer'],
@@ -60,10 +60,10 @@ window.SITE = {
 
   /* ---------- homepage photos ---------- */
   photos: {
-    hero:      'img/hero.jpg',
-    workIntro: 'img/citizen_clean.jpg',
+    hero:      'hero.jpg',
+    workIntro: 'citizen_clean.jpg',
     workIntroAlt: 'A hand holding a phone showing the Citizen app',
-    education: 'img/laptop.jpg',
+    education: 'laptop.jpg',
     educationAlt: 'A laptop and an open book on a desk by a radiator'
   },
 
@@ -71,20 +71,20 @@ window.SITE = {
      every photo links to its project (project = slug below)
      x / y: centre in % of the screen, w: width in vw, ar: width / height, d: depth */
   tiles: [
-    { img: 'img/card1.jpg', project: 'app-sciences',       x: 13, y: 40, w: 12.5, ar: 0.75, d: 1.25 },
-    { img: 'img/card2.jpg', project: 'data-insights',      x: 28, y: 76, w: 11,   ar: 0.75, d: 0.7 },
-    { img: 'img/card5.jpg', project: 'ai-solutions',       x: 66, y: 79, w: 10,   ar: 0.62, d: 1.5 },
-    { img: 'img/card3.jpg', project: 'tech-innovations',   x: 87, y: 27, w: 13,   ar: 0.75, d: 1.0 },
-    { img: 'img/card4.jpg', project: 'technology-archive', x: 86, y: 72, w: 14,   ar: 0.75, d: 1.35 }
+    { img: 'card1.jpg', project: 'app-sciences',       x: 13, y: 40, w: 12.5, ar: 0.75, d: 1.25 },
+    { img: 'card2.jpg', project: 'data-insights',      x: 28, y: 76, w: 11,   ar: 0.75, d: 0.7 },
+    { img: 'card5.jpg', project: 'ai-solutions',       x: 66, y: 79, w: 10,   ar: 0.62, d: 1.5 },
+    { img: 'card3.jpg', project: 'tech-innovations',   x: 87, y: 27, w: 13,   ar: 0.75, d: 1.0 },
+    { img: 'card4.jpg', project: 'technology-archive', x: 86, y: 72, w: 14,   ar: 0.75, d: 1.35 }
   ],
 
   /* ---------- skill icons ---------- */
   icons: [
-    { img: 'img/icon0.png', alt: 'Figma' },
-    { img: 'img/icon1.png', alt: 'Illustrator' },
-    { img: 'img/icon2.png', alt: 'After Effects' },
-    { img: 'img/icon3.png', alt: 'Motion curves' },
-    { img: 'img/icon4.png', alt: 'Claude' }
+    { img: 'icon0.png', alt: 'Figma' },
+    { img: 'icon1.png', alt: 'Illustrator' },
+    { img: 'icon2.png', alt: 'After Effects' },
+    { img: 'icon3.png', alt: 'Motion curves' },
+    { img: 'icon4.png', alt: 'Claude' }
   ]
 };
 
@@ -103,11 +103,11 @@ window.PROJECTS = [
     slug: 'app-sciences',
     year: '2025',
     name: 'App Sciences',
-    img: 'img/card1.jpg',
-    wide: 'img/citizen_clean.jpg',
+    img: 'card1.jpg',
+    wide: 'citizen_clean.jpg',
     gallery: [
-      { img: 'img/card1.jpg', caption: 'Caption for this photo' },
-      { img: 'img/citizen_clean.jpg', caption: 'Caption for this photo' }
+      { img: 'card1.jpg', caption: 'Caption for this photo' },
+      { img: 'citizen_clean.jpg', caption: 'Caption for this photo' }
     ],
     text: 'Add a short description of this case study here: the problem, your role and the outcome.',
     role: 'Your role', team: 'Team size', duration: 'Duration', tools: 'Figma, After Effects',
@@ -118,10 +118,10 @@ window.PROJECTS = [
     slug: 'data-insights',
     year: '2026',
     name: 'Data Insights',
-    img: 'img/card2.jpg',
-    wide: 'img/card2.jpg',
+    img: 'card2.jpg',
+    wide: 'card2.jpg',
     gallery: [
-      { img: 'img/card2.jpg', caption: 'Caption for this photo' }
+      { img: 'card2.jpg', caption: 'Caption for this photo' }
     ],
     text: 'Add a short description of this case study here: the problem, your role and the outcome.',
     role: 'Your role', team: 'Team size', duration: 'Duration', tools: 'Figma',
@@ -132,10 +132,10 @@ window.PROJECTS = [
     slug: 'tech-innovations',
     year: '2027',
     name: 'Tech Innovations',
-    img: 'img/card3.jpg',
-    wide: 'img/card3.jpg',
+    img: 'card3.jpg',
+    wide: 'card3.jpg',
     gallery: [
-      { img: 'img/card3.jpg', caption: 'Caption for this photo' }
+      { img: 'card3.jpg', caption: 'Caption for this photo' }
     ],
     text: 'Add a short description of this case study here: the problem, your role and the outcome.',
     role: 'Your role', team: 'Team size', duration: 'Duration', tools: 'Figma',
@@ -146,10 +146,10 @@ window.PROJECTS = [
     slug: 'technology-archive',
     year: '2026',
     name: 'Technology Archive',
-    img: 'img/card4.jpg',
-    wide: 'img/card4.jpg',
+    img: 'card4.jpg',
+    wide: 'card4.jpg',
     gallery: [
-      { img: 'img/card4.jpg', caption: 'Caption for this photo' }
+      { img: 'card4.jpg', caption: 'Caption for this photo' }
     ],
     text: 'Add a short description of this case study here: the problem, your role and the outcome.',
     role: 'Your role', team: 'Team size', duration: 'Duration', tools: 'Figma',
@@ -160,10 +160,10 @@ window.PROJECTS = [
     slug: 'ai-solutions',
     year: '2029',
     name: 'AI Solutions',
-    img: 'img/card5.jpg',
-    wide: 'img/card5.jpg',
+    img: 'card5.jpg',
+    wide: 'card5.jpg',
     gallery: [
-      { img: 'img/card5.jpg', caption: 'Caption for this photo' }
+      { img: 'card5.jpg', caption: 'Caption for this photo' }
     ],
     text: 'Add a short description of this case study here: the problem, your role and the outcome.',
     role: 'Your role', team: 'Team size', duration: 'Duration', tools: 'Figma, Claude',
