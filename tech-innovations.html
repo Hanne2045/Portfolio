@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tech Innovations · Hanne Vaartjes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<script>try{history.scrollRestoration='manual'}catch(e){}</script>
+<script>try{if(sessionStorage.getItem('hv-veil')){document.documentElement.classList.add('arrive');sessionStorage.removeItem('hv-veil')}}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="project.css">
+</head>
+<body data-project="tech-innovations">
+
+<div class="progress" id="progress"></div>
+<div class="grain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"><span id="cursor-t">View</span></div>
+<div class="veil" id="veil" aria-hidden="true"><span class="veil-t" id="veil-t"></span></div>
+
+<header class="nav pad" id="nav">
+  <a class="logo" id="logo" href="index.html" data-veil="Home" aria-label="Home">hv</a>
+  <ul>
+    <li><a class="roll" id="nav-work" href="index.html#work" data-veil="Work" data-t="Work"><span>Work</span></a></li>
+    <li><a class="roll" href="#" id="nav-next" data-t="Next"><span>Next</span></a></li>
+    <li class="dim" id="p-count"></li>
+  </ul>
+</header>
+
+<main>
+  <section class="p-hero" id="p-hero">
+    <div class="p-stage" id="p-stage">
+      <div class="p-amb" id="p-amb"></div>
+      <div class="p-frame" id="p-frame"><img id="p-cover" src="" alt="" fetchpriority="high"></div>
+      <div class="p-shade" id="p-shade"></div>
+      <div class="p-top pad eyebrow" id="p-top"><span id="p-case"></span><span id="p-year"></span></div>
+      <div class="p-bottom">
+        <div class="p-title-wrap pad" id="p-title-wrap">
+          <h1 class="sr-only" id="p-h1"></h1>
+          <div class="p-title masked" id="p-title" aria-hidden="true"></div>
+        </div>
+        <div class="p-lede pad" id="p-lede"></div>
+      </div>
+      <div class="p-hint eyebrow" id="p-hint"><span id="hint-t">Scroll</span><i></i></div>
+    </div>
+  </section>
+
+  <section class="p-over pad">
+    <p class="eyebrow rv" id="lbl-over">Overview</p>
+    <div class="over-grid">
+      <p class="statement scrub" id="p-summary"></p>
+      <div id="p-meta"></div>
+    </div>
+  </section>
+
+  <section class="p-wide pad" id="p-wide">
+    <div class="media wide-media curtain" id="wide-media">
+      <div class="par" id="wide-par"><div class="m-bg" id="wide-bg"></div><img id="wide-img" src="" alt="" loading="lazy" decoding="async"></div>
+    </div>
+  </section>
+
+  <section class="p-story pad" id="p-story"></section>
+
+  <section class="p-gal" id="p-gal">
+    <div class="gal-stage">
+      <div class="gal-head pad"><h2 class="h-display split" id="h-gal" data-split="Gallery"></h2><span class="eyebrow" id="gal-count"></span></div>
+      <div class="gal-track" id="gal-track"></div>
+      <div class="pad"><div class="gal-bar"><b id="gal-fill"></b></div></div>
+    </div>
+  </section>
+
+  <a class="p-next pad" id="p-next" href="#" data-cursor="Open">
+    <div class="next-inner">
+      <div class="next-head"><span class="eyebrow" id="lbl-next">Next project</span><span class="eyebrow" id="next-idx"></span></div>
+      <div class="next-row"><span class="next-mask"><span class="next-name" id="next-name"></span></span><span class="next-arrow" aria-hidden="true">&rarr;</span></div>
+    </div>
+    <div class="next-peek" id="next-peek"><img src="" alt=""></div>
+  </a>
+  <div class="pad next-all-wrap"><a class="next-all roll" id="next-all" href="index.html#work" data-veil="Work" data-t="Back to all work"><span>Back to all work</span></a></div>
+</main>
+
+<footer class="foot" id="foot">
+  <div class="foot-glow" id="foot-glow" aria-hidden="true"></div>
+  <div class="foot-top pad">
+    <ul class="foot-links">
+      <li><a class="roll" id="foot-work" href="index.html#work" data-veil="Work" data-t="Work"><span>Work</span></a></li>
+      <li><a class="roll" id="foot-home" href="index.html" data-veil="Home" data-t="Home"><span>Home</span></a></li>
+      <li><a class="roll" id="foot-top" href="#top" data-top data-t="Back to top"><span>Back to top</span></a></li>
+    </ul>
+    <p class="foot-note" id="foot-note"></p>
+  </div>
+  <div class="foot-name pad" id="foot-name-wrap" aria-hidden="true"><span class="fn-in" id="foot-name"></span></div>
+  <div class="foot-meta pad eyebrow" id="foot-meta"></div>
+</footer>
+
+<script src="content.js"></script>
+<script src="project.js"></script>
+</body>
+</html>
